@@ -28,7 +28,7 @@ public struct UserSensorConfiguration: Hashable, Equatable {
 
     public var accelerometerScale: MWAccelerometer.GravityRange    = .g16
     public var gyroscopeScale:     MWGyroscope.GraphRange          = .dps2000
-    public var sensorFusionType:   MWSensorFusion.OutputType       = .linearAcceleration
+    public var sensorFusionType:   MWSensorFusion.OutputType       = .quaternion
 
     /// Base case of no activity
     public init() { }
@@ -72,23 +72,23 @@ public extension UserSensorConfiguration {
 
     mutating func enableAccelerometer() {
         accelerometer = true
-        sensorFusion = false
+//        sensorFusion = false
     }
 
     mutating func enableMagnetometer() {
         magnetometer = true
-        sensorFusion = false
+//        sensorFusion = false
     }
 
     mutating func enableGyroscope() {
         gyroscope = true
-        sensorFusion = false
+//        sensorFusion = false
     }
 
     mutating func enableSensorFusion() {
-        accelerometer = false
-        magnetometer = false
-        gyroscope = false
+//        accelerometer = false
+//        magnetometer = false
+//        gyroscope = false
         sensorFusion = true
     }
 

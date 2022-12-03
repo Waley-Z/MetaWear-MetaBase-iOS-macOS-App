@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.com.mbientlab.MetaBase</string>
+		<string>iCloud.com.dpm.metawear.metabase</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
@@ -15,13 +15,13 @@
 	</array>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
-		<string>iCloud.com.mbientlab.MetaBase</string>
+		<string>iCloud.com.dpm.metawear.metabase</string>
 	</array>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.S2273LZ6GL.com.mbientlab.MetaWear</string>
+		<string>group.dpm.metawear.metabase</string>
 	</array>
 </dict>
 </plist>

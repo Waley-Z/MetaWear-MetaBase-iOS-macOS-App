@@ -74,7 +74,8 @@ public struct ModulesConfiguration: Equatable, Hashable {
                 case .quaternion:           self.fusionQuaternion = .init(mode: mode)
             }
 
-        } else {
+        }
+//        else {
 
             if config.accelerometer {
                 self.accelerometer = .init(rate: config.accelerometerRate,
@@ -89,7 +90,7 @@ public struct ModulesConfiguration: Equatable, Hashable {
                 self.gyroscope = .init(rate: config.gyroscopeRate,
                                        range: config.gyroscopeScale)
             }
-        }
+//        }
     }
 
     /// Blank
